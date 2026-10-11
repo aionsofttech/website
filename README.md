@@ -1,7 +1,7 @@
 # AION Soft Tech website
 
 The public company website for AION Soft Tech, published at
-[aionsofttech.github.io/website](https://aionsofttech.github.io/website/).
+[aionsofttech.com](https://aionsofttech.com/).
 
 ## Local development
 
@@ -14,5 +14,6 @@ currently available service. Contact is set to `support@aionsofttech.com`.
 ## Deployment
 
 The GitHub Actions workflow builds and deploys the site when changes reach `main`. Set the repository's
-Pages source to **GitHub Actions**. The site currently uses the GitHub Pages address only; no custom
-domain is configured in this repository.
+Pages source to **GitHub Actions** and configure `aionsofttech.com` as the custom domain. The build
+copies `public/CNAME` into the deployed site. At GoDaddy, point the apex domain to GitHub Pages using
+the four A records documented in [GitHub's custom-domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
