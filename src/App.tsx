@@ -29,7 +29,7 @@ function App() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="AION Soft Tech home" onClick={closeMenu}>
-          <img src="/aion-mark.svg" alt="" width="37" height="37" />
+          <img src="./aion-mark.svg" alt="" width="37" height="37" />
           <span>AION<span className="wordmark__light">SOFT TECH</span></span>
         </a>
         <button
@@ -273,7 +273,7 @@ function App() {
 
       <footer className="site-footer">
         <a className="wordmark wordmark--footer" href="#home">
-          <img src="/aion-mark.svg" alt="" width="32" height="32" />
+          <img src="./aion-mark.svg" alt="" width="32" height="32" />
           <span>AION<span className="wordmark__light">SOFT TECH</span></span>
         </a>
         <span className="site-footer__note">Practical AI. Better ways to work.</span>
