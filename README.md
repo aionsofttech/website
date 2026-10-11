@@ -1,7 +1,7 @@
 # AION Soft Tech website
 
-The public company website for [AION Soft Tech](https://aionsofttech.com), published through GitHub
-Pages from this repository.
+The public company website for AION Soft Tech, published at
+[aionsofttech.github.io/website](https://aionsofttech.github.io/website/).
 
 ## Local development
 
@@ -14,5 +14,5 @@ currently available service. Contact is set to `support@aionsofttech.com`.
 ## Deployment
 
 The GitHub Actions workflow builds and deploys the site when changes reach `main`. Set the repository's
-Pages source to **GitHub Actions** and configure `aionsofttech.com` as its custom domain. DNS records
-for the domain are managed at the registrar; keep any existing email records when updating them.
+Pages source to **GitHub Actions**. The site currently uses the GitHub Pages address only; no custom
+domain is configured in this repository.
