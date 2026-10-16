@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const APPBANA_STUDIO_URL = 'https://studio.appbana.aionsofttech.com/';
+const APPBANA_STUDIO_URL = 'https://appbana.aionsofttech.com/';
 const APPBANA_APPS_URL = 'https://apps.appbana.aionsofttech.com/';
 const APPBANA_HOME_URL = 'https://appbana.aionsofttech.com/';
 
@@ -213,7 +213,7 @@ function App() {
             </div>
             <div className="product-card__bottom"><span>INTELLIGENCE → ACTION → POSSIBILITY</span><span>ON THE HORIZON</span></div>
           </article>
-          <p className="product-disclaimer">Product status: AppBana is in public beta and open for testing at <a href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer">studio.appbana.aionsofttech.com</a>; general availability is coming soon. AgentBana is a future direction; its availability and features have not been announced.</p>
+          <p className="product-disclaimer">Product status: AppBana is in public beta and open for testing at <a href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer">appbana.aionsofttech.com</a>; general availability is coming soon. AgentBana is a future direction; its availability and features have not been announced.</p>
         </section>
 
         <section className="approach section-pad" id="principles">

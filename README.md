@@ -24,7 +24,8 @@ to `support@aionsofttech.com`.
 | Test | https://test.appbana.aionsofttech.com/health |
 | Live | https://appbana.aionsofttech.com/health |
 
-Only the Studio, Apps runtime, and Live URLs are linked from the public site.
+The site's "Try the beta" links open AppBana Studio at https://appbana.aionsofttech.com/; the Apps
+runtime is also linked. Other URLs are not linked from the public site.
 
 ## Deployment
 
