@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+const APPBANA_STUDIO_URL = 'https://studio.appbana.aionsofttech.com/';
+const APPBANA_APPS_URL = 'https://apps.appbana.aionsofttech.com/';
+const APPBANA_HOME_URL = 'https://appbana.aionsofttech.com/';
+
 const Arrow = ({ diagonal = false }: { diagonal?: boolean }) => (
   <svg
     aria-hidden="true"
@@ -27,6 +31,9 @@ function App() {
   return (
     <>
       <a className="skip-link" href="#main-content">Skip to content</a>
+      <a className="beta-banner" href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer">
+        <span className="status-dot" /> AppBana public beta is now open to everyone—try it today. Full launch coming soon. <Arrow diagonal />
+      </a>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="AION Soft Tech home" onClick={closeMenu}>
           <img src="./aion-mark.svg" alt="" width="37" height="37" />
@@ -46,6 +53,7 @@ function App() {
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#products" onClick={closeMenu}>Products</a>
           <a href="#principles" onClick={closeMenu}>Our approach</a>
+          <a href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Try AppBana beta</a>
           <a className="nav-contact" href="#contact" onClick={closeMenu}>
             Get in touch <Arrow diagonal />
           </a>
@@ -56,15 +64,16 @@ function App() {
         <section className="hero" id="home">
           <div className="hero__grid" aria-hidden="true" />
           <div className="hero__content">
-            <div className="eyebrow"><span className="status-dot" /> PRACTICAL AI · BUILT AROUND REAL WORK</div>
+            <div className="eyebrow"><span className="status-dot" /> APPBANA BETA IS LIVE · OPEN FOR TESTING WORLDWIDE</div>
             <h1>Build better apps.<br /><span className="hero__accent">Make work flow.</span></h1>
             <p className="hero__lead">
-              We’re AION Soft Tech. We’re building AppBana to turn business ideas into working
-              applications—and exploring AgentBana as a future direction for practical AI agents.
+              We’re AION Soft Tech. AppBana—our AI-powered business application builder—is now
+              ready and available in public beta for anyone to try, with the full release coming very
+              soon. We’re also exploring AgentBana as a future direction for practical AI agents.
             </p>
             <div className="hero__actions">
-              <a className="button button--dark" href="#products">Explore our products <Arrow /></a>
-              <a className="text-link" href="#about">About AION <span>↓</span></a>
+              <a className="button button--dark" href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer">Try the AppBana beta <Arrow diagonal /></a>
+              <a className="text-link" href="#products">Explore our products <span>↓</span></a>
             </div>
           </div>
           <div className="hero-art" role="img" aria-label="An idea taking shape as connected building blocks">
@@ -106,8 +115,8 @@ function App() {
               </p>
               <p>
                 At AION Soft Tech, we’re addressing that challenge with AI-powered application
-                building. AppBana is our first step: helping teams turn ideas into practical
-                business software. Looking ahead, we plan to explore AgentBana—a future direction
+                building. AppBana is our first step—now in public beta—helping teams turn ideas into
+                practical business software. Looking ahead, we plan to explore AgentBana—a future direction
                 for creating AI agents that can take on meaningful work.
               </p>
               <a className="inline-link" href="#products">See where we’re starting <Arrow /></a>
@@ -132,18 +141,22 @@ function App() {
           <article className="product-card product-card--appbana">
             <div className="product-card__topline">
               <span className="product-card__index">PRODUCT 01</span>
-              <span className="product-status"><span className="status-dot" /> IN DEVELOPMENT</span>
+              <span className="product-status"><span className="status-dot" /> PUBLIC BETA · AVAILABLE NOW</span>
             </div>
             <div className="product-card__body">
               <div className="product-card__copy">
                 <div className="product-wordmark">App<span>Bana</span><span className="product-wordmark__period">.</span></div>
                 <h3>Turn your idea<br />into a working app.</h3>
                 <p>
-                  We’re building AppBana to help teams create business applications from a
-                  description. Shape your data, workflows, and screens in one place—without starting
-                  from a blank page.
+                  AppBana helps teams create business applications from a description. Shape your
+                  data, workflows, and screens in one place—without starting from a blank page.
+                  The beta is open to everyone today, and the full launch is coming very soon.
                 </p>
-                <span className="product-note">IN DEVELOPMENT · OUR FIRST PRODUCT</span>
+                <div className="product-links">
+                  <a className="button button--dark" href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer">Open AppBana Studio <Arrow diagonal /></a>
+                  <a className="text-link" href={APPBANA_APPS_URL} target="_blank" rel="noopener noreferrer">See apps built with AppBana <span>↗</span></a>
+                </div>
+                <span className="product-note">PUBLIC BETA · OUR FIRST PRODUCT · LAUNCHING SOON</span>
               </div>
               <div className="product-visual product-visual--app" aria-hidden="true">
                 <div className="app-window">
@@ -200,7 +213,7 @@ function App() {
             </div>
             <div className="product-card__bottom"><span>INTELLIGENCE → ACTION → POSSIBILITY</span><span>ON THE HORIZON</span></div>
           </article>
-          <p className="product-disclaimer">Product status: AppBana is in development. AgentBana is a future direction; its availability and features have not been announced.</p>
+          <p className="product-disclaimer">Product status: AppBana is in public beta and open for testing at <a href={APPBANA_STUDIO_URL} target="_blank" rel="noopener noreferrer">studio.appbana.aionsofttech.com</a>; general availability is coming soon. AgentBana is a future direction; its availability and features have not been announced.</p>
         </section>
 
         <section className="approach section-pad" id="principles">
@@ -243,8 +256,9 @@ function App() {
                 commitment to approachable, dependable software.
               </p>
               <p>
-                AppBana is our first product, now in development. AgentBana is a future direction—not
-                an available product.
+                AppBana is our first product, now available in public beta and launching very soon at{' '}
+                <a href={APPBANA_HOME_URL} target="_blank" rel="noopener noreferrer">appbana.aionsofttech.com</a>.
+                AgentBana is a future direction—not an available product.
               </p>
               <div className="company__signature"><span>A</span><div><b>AION SOFT TECH</b><i>Practical AI. Better ways to work.</i></div></div>
             </div>
